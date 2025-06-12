@@ -1,10 +1,10 @@
 pipeline {
     agent any
-    
+
     environment {
         VENV_DIR = 'venv'
     }
-    
+
     stages {
         stage('Cloning from Github Repo') {
             steps {
@@ -15,9 +15,6 @@ pipeline {
                 }
             }
         }
-
-    }
-}
 
         stage('Setup Virtual Environment') {
             steps {
@@ -30,7 +27,6 @@ pipeline {
                         pip install --upgrade pip
                         pip install -e .
                     '''
-                    
                 }
             }
         }
@@ -47,7 +43,8 @@ pipeline {
                         flake8 application.py main.py --ignore=E501,E302 --output-file=flake8-report.txt || echo "Flake8 stage completed"
                         black application.py main.py || echo "Black stage completed"
                     '''
-                    
                 }
             }
         }
+    }
+}
