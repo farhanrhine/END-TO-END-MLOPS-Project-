@@ -46,9 +46,6 @@ pipeline {
                 }
             }
         }
-    }
-}
-
 
         stage('Trivy Scanning') {
             steps {
