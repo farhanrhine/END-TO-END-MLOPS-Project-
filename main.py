@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
         ### Ingestion
         ingestion = DataIngestion(raw_data_path=RAW_DATA_PATH,ingested_data_dir=INGESTED_DATA_DIR)
-        ingestion.create_ingested_data_dir()
+        ingestion.created_ingested_data_dir()
         ingestion.split_data(train_path=TRAIN_DATA_PATH,test_path=TEST_DATA_PATH)
 
 
