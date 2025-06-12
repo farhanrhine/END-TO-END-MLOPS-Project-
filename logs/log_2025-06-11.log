@@ -1,0 +1,91 @@
+2025-06-11 07:54:04,376 - INFO - model_training.py:32 - Data Loading for Model training
+2025-06-11 07:54:04,971 - INFO - model_training.py:34 - Data load sucesfull
+2025-06-11 07:54:04,971 - INFO - model_training.py:42 - Data splitting started
+2025-06-11 07:54:05,015 - INFO - model_training.py:46 - ['Online boarding', 'Delay Ratio', 'Inflight wifi service', 'Class', 'Type of Travel', 'Inflight entertainment', 'Flight Distance', 'Seat comfort', 'Leg room service', 'On-board service', 'Cleanliness', 'Ease of Online booking']
+2025-06-11 07:54:05,088 - INFO - model_training.py:49 - Data splitting done
+2025-06-11 07:54:05,093 - INFO - model_training.py:120 - Loaded hyperparamters :  {'learning_rate': [0.01, 0.05, 0.1], 'n_estimators': [100, 200, 300], 'max_depth': [5, 10, 15]}
+2025-06-11 07:54:05,123 - INFO - model_training.py:59 - Training model started
+2025-06-11 07:59:20,664 - INFO - model_training.py:66 - Model training completed
+2025-06-11 07:59:20,682 - INFO - model_training.py:126 - Best hyperparamters are : {'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 200}
+2025-06-11 07:59:20,738 - INFO - model_training.py:77 - Model evaluation sterted
+2025-06-11 07:59:20,989 - INFO - model_training.py:89 - Evaluation metrics : {'accuracy': 0.9421417797888386, 'precison': 0.9422589699710564, 'recall': 0.9421417797888386, 'f1_score': 0.942012521754656, 'confusion_matrix': [[9104, 364], [595, 6512]]}
+2025-06-11 07:59:21,505 - INFO - model_training.py:98 - saving model
+2025-06-11 07:59:21,567 - INFO - model_training.py:103 - Model saved sucesfully
+2025-06-11 18:49:01,510 - INFO - data_ingestion.py:16 - Data Ingestion has started
+2025-06-11 18:49:01,512 - INFO - data_ingestion.py:22 - Directory for Ingestion created
+2025-06-11 18:49:02,203 - INFO - data_ingestion.py:30 - Raw data loaded succesfully with shape: (103594, 25)
+2025-06-11 18:49:02,279 - INFO - data_ingestion.py:33 - Data splitted Sucessfully
+2025-06-11 18:49:04,642 - INFO - data_ingestion.py:37 - Training and testing data saved sucesfully with shape (82875, 25), (20719, 25)
+2025-06-11 18:49:07,763 - INFO - data_processing.py:78 - Starting the pipeline of Data Procesing
+2025-06-11 18:49:07,764 - INFO - data_processing.py:17 - Data Processinng Started
+2025-06-11 18:49:08,182 - INFO - data_processing.py:19 - Data read succesfull : Data shape : (82875, 25)
+2025-06-11 18:49:08,183 - INFO - data_processing.py:27 - Dropping Unnecesary Columns :  ['MyUnknownColumn', 'id']
+2025-06-11 18:49:08,208 - INFO - data_processing.py:29 - Columns dropped Sucesfully : Shape = (82875, 23)
+2025-06-11 18:49:08,213 - INFO - data_processing.py:37 - Handling outliers : Columns = ['Flight Distance', 'Departure Delay in Minutes', 'Arrival Delay in Minutes', 'Checkin service']
+2025-06-11 18:49:08,277 - INFO - data_processing.py:47 - Outliers handled  Sucesffuully : (82875, 23)
+2025-06-11 18:49:08,277 - INFO - data_processing.py:56 - Handling null values
+2025-06-11 18:49:08,282 - INFO - data_processing.py:58 - Missing values handled sucessfully : Shape == (82875, 23)
+2025-06-11 18:49:10,184 - INFO - data_processing.py:69 - Processed data saved sucesfully
+2025-06-11 18:49:10,184 - INFO - data_processing.py:89 - Data Processing Pipeline CCompleted Successfully
+2025-06-11 18:49:17,571 - INFO - feature_engineering.py:104 - Starting your feature engineering pipeline
+2025-06-11 18:49:17,571 - INFO - feature_engineering.py:21 - Loading data
+2025-06-11 18:49:18,073 - INFO - feature_engineering.py:23 - Data loaded sucesffuly
+2025-06-11 18:49:18,073 - INFO - feature_engineering.py:30 - Starting Feature Construction
+2025-06-11 18:49:18,079 - INFO - feature_engineering.py:33 - Feature Construction done sucesfully
+2025-06-11 18:49:18,079 - INFO - feature_engineering.py:41 - Starting Binning of Age Column
+2025-06-11 18:49:18,099 - INFO - feature_engineering.py:43 - Binning of Age Column Sucesfull
+2025-06-11 18:49:18,100 - INFO - feature_engineering.py:51 - Performing label encoding on ['Gender', 'Customer Type', 'Type of Travel', 'Class', 'satisfaction', 'Age Group']
+2025-06-11 18:49:18,355 - INFO - feature_engineering.py:56 - Mapping for Gender : {'Female': np.int64(0), 'Male': np.int64(1)}
+2025-06-11 18:49:18,355 - INFO - feature_engineering.py:56 - Mapping for Customer Type : {'Loyal Customer': np.int64(0), 'disloyal Customer': np.int64(1)}
+2025-06-11 18:49:18,356 - INFO - feature_engineering.py:56 - Mapping for Type of Travel : {'Business travel': np.int64(0), 'Personal Travel': np.int64(1)}
+2025-06-11 18:49:18,356 - INFO - feature_engineering.py:56 - Mapping for Class : {'Business': np.int64(0), 'Eco': np.int64(1), 'Eco Plus': np.int64(2)}
+2025-06-11 18:49:18,356 - INFO - feature_engineering.py:56 - Mapping for satisfaction : {'neutral or dissatisfied': np.int64(0), 'satisfied': np.int64(1)}
+2025-06-11 18:49:18,356 - INFO - feature_engineering.py:56 - Mapping for Age Group : {'Adult': np.int64(0), 'Child': np.int64(1), 'Senior': np.int64(2), 'Youngster': np.int64(3)}
+2025-06-11 18:49:18,356 - INFO - feature_engineering.py:57 - Label Encoding successful
+2025-06-11 18:49:18,356 - INFO - feature_engineering.py:66 - Starting Feature Selection
+2025-06-11 18:49:19,071 - INFO - feature_engineering.py:79 - Mutual Information Table is : 
+                              Feature  Mutual Information
+11                    Online boarding            0.210781
+23                        Delay Ratio            0.202477
+6               Inflight wifi service            0.161651
+4                               Class            0.134126
+3                      Type of Travel            0.113843
+13             Inflight entertainment            0.094464
+5                     Flight Distance            0.089627
+12                       Seat comfort            0.079912
+15                   Leg room service            0.060933
+14                   On-board service            0.057418
+19                        Cleanliness            0.052649
+8              Ease of Online booking            0.051334
+2                                 Age            0.047422
+16                   Baggage handling            0.041933
+18                   Inflight service            0.040663
+17                    Checkin service            0.033162
+10                     Food and drink            0.027606
+24                          Age Group            0.022313
+1                       Customer Type            0.018396
+9                       Gate location            0.012063
+21           Arrival Delay in Minutes            0.007386
+22                        Total Delay            0.005992
+20         Departure Delay in Minutes            0.003289
+7   Departure/Arrival time convenient            0.001867
+0                              Gender            0.000068
+2025-06-11 18:49:19,084 - INFO - feature_engineering.py:84 - Top features : ['Online boarding', 'Delay Ratio', 'Inflight wifi service', 'Class', 'Type of Travel', 'Inflight entertainment', 'Flight Distance', 'Seat comfort', 'Leg room service', 'On-board service', 'Cleanliness', 'Ease of Online booking']
+2025-06-11 18:49:19,084 - INFO - feature_engineering.py:85 - Feature Selection Sucesfull
+2025-06-11 18:49:19,093 - INFO - feature_engineering.py:93 - Saving your data ...
+2025-06-11 18:49:20,458 - INFO - feature_engineering.py:96 - Data Saved succesfully at ./artifacts\engineered_data\final_df.csv
+2025-06-11 18:49:20,458 - INFO - feature_engineering.py:111 - Your Feature Engineering pipeline successfully done..
+2025-06-11 18:49:20,458 - INFO - feature_engineering.py:118 - End of Feature Engineering pipeline
+2025-06-11 18:49:35,553 - INFO - model_training.py:32 - Data Loading for Model training
+2025-06-11 18:49:35,886 - INFO - model_training.py:34 - Data load sucesfull
+2025-06-11 18:49:35,887 - INFO - model_training.py:42 - Data splitting started
+2025-06-11 18:49:35,898 - INFO - model_training.py:46 - ['Online boarding', 'Delay Ratio', 'Inflight wifi service', 'Class', 'Type of Travel', 'Inflight entertainment', 'Flight Distance', 'Seat comfort', 'Leg room service', 'On-board service', 'Cleanliness', 'Ease of Online booking']
+2025-06-11 18:49:35,933 - INFO - model_training.py:49 - Data splitting done
+2025-06-11 18:49:35,951 - INFO - model_training.py:120 - Loaded hyperparamters :  {'learning_rate': [0.01, 0.05, 0.1], 'n_estimators': [100, 200, 300], 'max_depth': [5, 10, 15]}
+2025-06-11 18:49:35,965 - INFO - model_training.py:59 - Training model started
+2025-06-11 18:52:49,497 - INFO - model_training.py:66 - Model training completed
+2025-06-11 18:52:49,498 - INFO - model_training.py:126 - Best hyperparamters are : {'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 200}
+2025-06-11 18:52:49,533 - INFO - model_training.py:77 - Model evaluation sterted
+2025-06-11 18:52:49,785 - INFO - model_training.py:89 - Evaluation metrics : {'accuracy': 0.9421417797888386, 'precison': 0.9422589699710564, 'recall': 0.9421417797888386, 'f1_score': 0.942012521754656, 'confusion_matrix': [[9104, 364], [595, 6512]]}
+2025-06-11 18:52:50,381 - INFO - model_training.py:98 - saving model
+2025-06-11 18:52:50,422 - INFO - model_training.py:103 - Model saved sucesfully

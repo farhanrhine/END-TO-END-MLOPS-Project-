@@ -1,0 +1,13 @@
+2025-05-29 06:58:14,180 - INFO - database_extraction.py:23 - Your Database configuration has been set up
+2025-05-29 06:58:14,290 - INFO - database_extraction.py:34 - Successfully connected to the Database
+2025-05-29 06:58:14,290 - INFO - database_extraction.py:42 - Disconnected to the Database
+2025-05-29 07:04:00,755 - INFO - database_extraction.py:23 - Your Database configuration has been set up
+2025-05-29 07:04:00,809 - INFO - database_extraction.py:34 - Successfully connected to the Database
+2025-05-29 07:04:01,256 - INFO - database_extraction.py:60 - Data Fetched Successfully
+2025-05-29 07:04:07,405 - INFO - database_extraction.py:70 - Data Successfully saved to {csv_file_path}
+2025-05-29 07:04:07,406 - INFO - database_extraction.py:42 - Disconnected to the Database
+2025-05-29 07:11:42,722 - INFO - database_extraction.py:23 - Your Database configuration has been set up
+2025-05-29 07:11:42,776 - INFO - database_extraction.py:34 - Successfully connected to the Database
+2025-05-29 07:11:43,136 - INFO - database_extraction.py:60 - Data Fetched Successfully
+2025-05-29 07:11:43,672 - INFO - database_extraction.py:70 - Data Successfully saved to ./artifacts/raw\data.csv
+2025-05-29 07:11:43,672 - INFO - database_extraction.py:42 - Disconnected to the Database

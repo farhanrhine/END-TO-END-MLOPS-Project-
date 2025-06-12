@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/farha/OneDrive/Desktop/mlops/mlruns/374072477814121167/4873fbd44f0e4ab5b5ca0df64152d2fa/artifacts
+end_time: 1749608995782
+entry_point_name: ''
+experiment_id: '374072477814121167'
+lifecycle_stage: active
+run_id: 4873fbd44f0e4ab5b5ca0df64152d2fa
+run_name: rumbling-donkey-184
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749608643885
+status: 3
+tags: []
+user_id: farha

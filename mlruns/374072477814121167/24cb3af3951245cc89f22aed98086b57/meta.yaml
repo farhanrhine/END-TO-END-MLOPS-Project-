@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/farha/OneDrive/Desktop/mlops/mlruns/374072477814121167/24cb3af3951245cc89f22aed98086b57/artifacts
+end_time: 1749648203387
+entry_point_name: ''
+experiment_id: '374072477814121167'
+lifecycle_stage: active
+run_id: 24cb3af3951245cc89f22aed98086b57
+run_name: sassy-carp-694
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749647975273
+status: 3
+tags: []
+user_id: farha

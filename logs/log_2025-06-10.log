@@ -1,0 +1,141 @@
+2025-06-10 11:59:20,644 - INFO - data_processing.py:78 - Starting the pipeline of Data Procesing
+2025-06-10 11:59:20,644 - INFO - data_processing.py:17 - Data Processinng Started
+2025-06-10 11:59:20,851 - INFO - data_processing.py:19 - Data read succesfull : Data shape : (82875, 25)
+2025-06-10 11:59:20,851 - INFO - data_processing.py:27 - Dropping Unnecesary Columns :  ['MyUnknownColumn', 'id']
+2025-06-10 11:59:20,867 - INFO - data_processing.py:29 - Columns dropped Sucesfully : Shape = (82875, 23)
+2025-06-10 11:59:20,870 - INFO - data_processing.py:37 - Handling outliers : Columns = ['Flight Distance', 'Departure Delay in Minutes', 'Arrival Delay in Minutes', 'Checkin service']
+2025-06-10 11:59:20,898 - INFO - data_processing.py:47 - Outliers handled  Sucesffuully : (82875, 23)
+2025-06-10 11:59:20,898 - INFO - data_processing.py:56 - Handling null values
+2025-06-10 11:59:20,900 - INFO - data_processing.py:58 - Missing values handled sucessfully : Shape == (82875, 23)
+2025-06-10 11:59:21,386 - INFO - data_processing.py:69 - Processed data saved sucesfully
+2025-06-10 11:59:21,386 - INFO - data_processing.py:89 - Data Processing Pipeline CCompleted Successfully
+2025-06-10 12:46:21,093 - INFO - feature_engineering.py:104 - Starting your feature engineering pipeline
+2025-06-10 12:46:21,101 - INFO - feature_engineering.py:21 - Loading data
+2025-06-10 12:46:21,415 - INFO - feature_engineering.py:23 - Data loaded sucesffuly
+2025-06-10 12:46:21,415 - INFO - feature_engineering.py:30 - Starting Feature Construction
+2025-06-10 12:46:21,423 - INFO - feature_engineering.py:33 - Feature Construction done sucesfully
+2025-06-10 12:46:21,423 - INFO - feature_engineering.py:41 - Starting Binning of Age Column
+2025-06-10 12:46:21,446 - INFO - feature_engineering.py:43 - Binning of Age Column Sucesfull
+2025-06-10 12:46:21,448 - INFO - feature_engineering.py:51 - Performing label encoding on ['Gender', 'Customer Type', 'Type of Travel', 'Class', 'satisfaction', 'Age Group']
+2025-06-10 12:46:21,563 - INFO - feature_engineering.py:56 - Mapping for Gender : {'Female': np.int64(0), 'Male': np.int64(1)}
+2025-06-10 12:46:21,563 - INFO - feature_engineering.py:56 - Mapping for Customer Type : {'Loyal Customer': np.int64(0), 'disloyal Customer': np.int64(1)}
+2025-06-10 12:46:21,563 - INFO - feature_engineering.py:56 - Mapping for Type of Travel : {'Business travel': np.int64(0), 'Personal Travel': np.int64(1)}
+2025-06-10 12:46:21,563 - INFO - feature_engineering.py:56 - Mapping for Class : {'Business': np.int64(0), 'Eco': np.int64(1), 'Eco Plus': np.int64(2)}
+2025-06-10 12:46:21,563 - INFO - feature_engineering.py:56 - Mapping for satisfaction : {'neutral or dissatisfied': np.int64(0), 'satisfied': np.int64(1)}
+2025-06-10 12:46:21,563 - INFO - feature_engineering.py:56 - Mapping for Age Group : {'Adult': np.int64(0), 'Child': np.int64(1), 'Senior': np.int64(2), 'Youngster': np.int64(3)}
+2025-06-10 12:46:21,563 - INFO - feature_engineering.py:57 - Label Encoding successful
+2025-06-10 12:46:21,563 - INFO - feature_engineering.py:66 - Starting Feature Selection
+2025-06-10 12:46:21,958 - INFO - feature_engineering.py:79 - Mutual Information Table is : 
+                              Feature  Mutual Information
+11                    Online boarding            0.210781
+23                        Delay Ratio            0.202477
+6               Inflight wifi service            0.161651
+4                               Class            0.134126
+3                      Type of Travel            0.113843
+13             Inflight entertainment            0.094464
+5                     Flight Distance            0.089627
+12                       Seat comfort            0.079912
+15                   Leg room service            0.060933
+14                   On-board service            0.057418
+19                        Cleanliness            0.052649
+8              Ease of Online booking            0.051334
+2                                 Age            0.047422
+16                   Baggage handling            0.041933
+18                   Inflight service            0.040663
+17                    Checkin service            0.033162
+10                     Food and drink            0.027606
+24                          Age Group            0.022313
+1                       Customer Type            0.018396
+9                       Gate location            0.012063
+21           Arrival Delay in Minutes            0.007386
+22                        Total Delay            0.005992
+20         Departure Delay in Minutes            0.003289
+7   Departure/Arrival time convenient            0.001867
+0                              Gender            0.000068
+2025-06-10 12:46:21,966 - INFO - feature_engineering.py:84 - Top features : ['Online boarding', 'Delay Ratio', 'Inflight wifi service', 'Class', 'Type of Travel', 'Inflight entertainment', 'Flight Distance', 'Seat comfort', 'Leg room service', 'On-board service', 'Cleanliness', 'Ease of Online booking']
+2025-06-10 12:46:21,966 - INFO - feature_engineering.py:85 - Feature Selection Sucesfull
+2025-06-10 12:46:21,974 - INFO - feature_engineering.py:93 - Saving your data ...
+2025-06-10 12:46:22,526 - INFO - feature_engineering.py:96 - Data Saved succesfully at ./artifacts\engineered_data.csv
+2025-06-10 12:46:22,526 - INFO - feature_engineering.py:111 - Your Feature Engineering pipeline successfully done..
+2025-06-10 12:46:22,526 - INFO - feature_engineering.py:118 - End of Feature Engineering pipeline
+2025-06-10 12:56:18,613 - INFO - feature_engineering.py:104 - Starting your feature engineering pipeline
+2025-06-10 12:56:18,613 - INFO - feature_engineering.py:21 - Loading data
+2025-06-10 12:56:18,801 - INFO - feature_engineering.py:23 - Data loaded sucesffuly
+2025-06-10 12:56:18,801 - INFO - feature_engineering.py:30 - Starting Feature Construction
+2025-06-10 12:56:18,809 - INFO - feature_engineering.py:33 - Feature Construction done sucesfully
+2025-06-10 12:56:18,809 - INFO - feature_engineering.py:41 - Starting Binning of Age Column
+2025-06-10 12:56:18,826 - INFO - feature_engineering.py:43 - Binning of Age Column Sucesfull
+2025-06-10 12:56:18,826 - INFO - feature_engineering.py:51 - Performing label encoding on ['Gender', 'Customer Type', 'Type of Travel', 'Class', 'satisfaction', 'Age Group']
+2025-06-10 12:56:18,934 - INFO - feature_engineering.py:56 - Mapping for Gender : {'Female': np.int64(0), 'Male': np.int64(1)}
+2025-06-10 12:56:18,934 - INFO - feature_engineering.py:56 - Mapping for Customer Type : {'Loyal Customer': np.int64(0), 'disloyal Customer': np.int64(1)}
+2025-06-10 12:56:18,934 - INFO - feature_engineering.py:56 - Mapping for Type of Travel : {'Business travel': np.int64(0), 'Personal Travel': np.int64(1)}
+2025-06-10 12:56:18,934 - INFO - feature_engineering.py:56 - Mapping for Class : {'Business': np.int64(0), 'Eco': np.int64(1), 'Eco Plus': np.int64(2)}
+2025-06-10 12:56:18,934 - INFO - feature_engineering.py:56 - Mapping for satisfaction : {'neutral or dissatisfied': np.int64(0), 'satisfied': np.int64(1)}
+2025-06-10 12:56:18,934 - INFO - feature_engineering.py:56 - Mapping for Age Group : {'Adult': np.int64(0), 'Child': np.int64(1), 'Senior': np.int64(2), 'Youngster': np.int64(3)}
+2025-06-10 12:56:18,934 - INFO - feature_engineering.py:57 - Label Encoding successful
+2025-06-10 12:56:18,934 - INFO - feature_engineering.py:66 - Starting Feature Selection
+2025-06-10 12:56:19,272 - INFO - feature_engineering.py:79 - Mutual Information Table is : 
+                              Feature  Mutual Information
+11                    Online boarding            0.210781
+23                        Delay Ratio            0.202477
+6               Inflight wifi service            0.161651
+4                               Class            0.134126
+3                      Type of Travel            0.113843
+13             Inflight entertainment            0.094464
+5                     Flight Distance            0.089627
+12                       Seat comfort            0.079912
+15                   Leg room service            0.060933
+14                   On-board service            0.057418
+19                        Cleanliness            0.052649
+8              Ease of Online booking            0.051334
+2                                 Age            0.047422
+16                   Baggage handling            0.041933
+18                   Inflight service            0.040663
+17                    Checkin service            0.033162
+10                     Food and drink            0.027606
+24                          Age Group            0.022313
+1                       Customer Type            0.018396
+9                       Gate location            0.012063
+21           Arrival Delay in Minutes            0.007386
+22                        Total Delay            0.005992
+20         Departure Delay in Minutes            0.003289
+7   Departure/Arrival time convenient            0.001867
+0                              Gender            0.000068
+2025-06-10 12:56:19,288 - INFO - feature_engineering.py:84 - Top features : ['Online boarding', 'Delay Ratio', 'Inflight wifi service', 'Class', 'Type of Travel', 'Inflight entertainment', 'Flight Distance', 'Seat comfort', 'Leg room service', 'On-board service', 'Cleanliness', 'Ease of Online booking']
+2025-06-10 12:56:19,288 - INFO - feature_engineering.py:85 - Feature Selection Sucesfull
+2025-06-10 12:56:19,297 - INFO - feature_engineering.py:93 - Saving your data ...
+2025-06-10 12:56:19,681 - INFO - feature_engineering.py:96 - Data Saved succesfully at ./artifacts\engineered_data\final_df.csv
+2025-06-10 12:56:19,681 - INFO - feature_engineering.py:111 - Your Feature Engineering pipeline successfully done..
+2025-06-10 12:56:19,681 - INFO - feature_engineering.py:118 - End of Feature Engineering pipeline
+2025-06-10 21:09:02,580 - INFO - model_selection.py:130 - Starting ModelSelection pipeline
+2025-06-10 21:09:02,583 - INFO - model_selection.py:51 - Loading CSV file
+2025-06-10 21:09:03,281 - INFO - model_selection.py:58 - Data loaded and sampled sucesfully
+2025-06-10 21:09:03,287 - INFO - model_selection.py:66 - Splitting data
+2025-06-10 21:09:03,306 - INFO - model_selection.py:92 - Training and evalation started
+2025-06-10 21:09:04,024 - INFO - model_selection.py:109 - Logistic Regression trained sucesfullyMetrics : Accuracy : 0.8323281061519904 , Precision : 0.8349688395839714 , Recall : 0.8323281061519904 , F1 Score : 0.8328899265221216
+2025-06-10 21:09:11,399 - INFO - model_selection.py:109 - Random Forest trained sucesfullyMetrics : Accuracy : 0.9264173703256936 , Precision : 0.9263942392189537 , Recall : 0.9264173703256936 , F1 Score : 0.9262941146879727
+2025-06-10 21:09:14,261 - INFO - model_selection.py:109 - Gradient Boosting trained sucesfullyMetrics : Accuracy : 0.9131483715319663 , Precision : 0.9134084803484046 , Recall : 0.9131483715319663 , F1 Score : 0.9128353716472162
+2025-06-10 21:09:16,147 - INFO - model_selection.py:109 - AdaBoost trained sucesfullyMetrics : Accuracy : 0.882388419782871 , Precision : 0.8825036548137196 , Recall : 0.882388419782871 , F1 Score : 0.8824379072194714
+2025-06-10 21:09:25,898 - INFO - model_selection.py:109 - Support Vector Classifier trained sucesfullyMetrics : Accuracy : 0.6821471652593486 , Precision : 0.6840980726454744 , Recall : 0.6821471652593486 , F1 Score : 0.6689178492799492
+2025-06-10 21:09:26,762 - INFO - model_selection.py:109 - K-Nearest Neighbors trained sucesfullyMetrics : Accuracy : 0.7611580217129071 , Precision : 0.7600690850188037 , Recall : 0.7611580217129071 , F1 Score : 0.7595228796298127
+2025-06-10 21:09:27,410 - INFO - model_selection.py:109 - Naive Bayes trained sucesfullyMetrics : Accuracy : 0.8377563329312424 , Precision : 0.8384637576004934 , Recall : 0.8377563329312424 , F1 Score : 0.8379991947950302
+2025-06-10 21:09:28,034 - INFO - model_selection.py:109 - Decision Tree trained sucesfullyMetrics : Accuracy : 0.8992762364294331 , Precision : 0.8991503584820608 , Recall : 0.8992762364294331 , F1 Score : 0.8991569309386903
+2025-06-10 21:09:34,061 - INFO - model_selection.py:109 - LightGBM trained sucesfullyMetrics : Accuracy : 0.9252110977080821 , Precision : 0.925233457719638 , Recall : 0.9252110977080821 , F1 Score : 0.925055415651284
+2025-06-10 21:09:36,179 - INFO - model_selection.py:109 - XGBoost trained sucesfullyMetrics : Accuracy : 0.9258142340168878 , Precision : 0.9257996058319914 , Recall : 0.9258142340168878 , F1 Score : 0.9256825151816046
+2025-06-10 21:09:37,021 - INFO - model_selection.py:137 - ModelSelection pipeline completed successfully
+2025-06-10 21:24:22,499 - INFO - model_selection.py:130 - Starting ModelSelection pipeline
+2025-06-10 21:24:22,500 - INFO - model_selection.py:51 - Loading CSV file
+2025-06-10 21:24:23,016 - INFO - model_selection.py:58 - Data loaded and sampled sucesfully
+2025-06-10 21:24:23,020 - INFO - model_selection.py:66 - Splitting data
+2025-06-10 21:24:23,031 - INFO - model_selection.py:92 - Training and evalation started
+2025-06-10 21:24:23,454 - INFO - model_selection.py:109 - Logistic Regression trained sucesfullyMetrics : Accuracy : 0.8299155609167672 , Precision : 0.8304746837628405 , Recall : 0.8299155609167672 , F1 Score : 0.8301352974607518
+2025-06-10 21:24:26,715 - INFO - model_selection.py:109 - Random Forest trained sucesfullyMetrics : Accuracy : 0.9360675512665863 , Precision : 0.936019844710561 , Recall : 0.9360675512665863 , F1 Score : 0.93597512531215
+2025-06-10 21:24:28,781 - INFO - model_selection.py:109 - Gradient Boosting trained sucesfullyMetrics : Accuracy : 0.9240048250904704 , Precision : 0.9240467629587503 , Recall : 0.9240048250904704 , F1 Score : 0.9237913788786181
+2025-06-10 21:24:30,546 - INFO - model_selection.py:109 - AdaBoost trained sucesfullyMetrics : Accuracy : 0.887816646562123 , Precision : 0.8878627892778805 , Recall : 0.887816646562123 , F1 Score : 0.887838402408695
+2025-06-10 21:24:34,593 - INFO - model_selection.py:109 - Support Vector Classifier trained sucesfullyMetrics : Accuracy : 0.6731001206272618 , Precision : 0.6733081830714521 , Recall : 0.6731001206272618 , F1 Score : 0.6562741402347483
+2025-06-10 21:24:36,193 - INFO - model_selection.py:109 - K-Nearest Neighbors trained sucesfullyMetrics : Accuracy : 0.6984318455971049 , Precision : 0.695397460864824 , Recall : 0.6984318455971049 , F1 Score : 0.694895418234838
+2025-06-10 21:24:37,456 - INFO - model_selection.py:109 - Naive Bayes trained sucesfullyMetrics : Accuracy : 0.8709288299155609 , Precision : 0.8713882132691821 , Recall : 0.8709288299155609 , F1 Score : 0.8710955803425563
+2025-06-10 21:24:39,022 - INFO - model_selection.py:109 - Decision Tree trained sucesfullyMetrics : Accuracy : 0.9191797346200241 , Precision : 0.91952177739429 , Recall : 0.9191797346200241 , F1 Score : 0.9192841484387969
+2025-06-10 21:24:53,891 - INFO - model_selection.py:109 - LightGBM trained sucesfullyMetrics : Accuracy : 0.9336550060313631 , Precision : 0.9336003506605439 , Recall : 0.9336550060313631 , F1 Score : 0.9336151565089991
+2025-06-10 21:24:57,013 - INFO - model_selection.py:109 - XGBoost trained sucesfullyMetrics : Accuracy : 0.9336550060313631 , Precision : 0.9336316355263155 , Recall : 0.9336550060313631 , F1 Score : 0.9336419315062259
+2025-06-10 21:24:57,877 - INFO - model_selection.py:137 - ModelSelection pipeline completed successfully

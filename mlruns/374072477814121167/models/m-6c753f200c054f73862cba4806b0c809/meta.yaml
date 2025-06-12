@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/farha/OneDrive/Desktop/mlops/mlruns/374072477814121167/models/m-6c753f200c054f73862cba4806b0c809/artifacts
+creation_timestamp: 1749648170583
+experiment_id: '374072477814121167'
+last_updated_timestamp: 1749648203298
+model_id: m-6c753f200c054f73862cba4806b0c809
+model_type: null
+name: model
+source_run_id: 24cb3af3951245cc89f22aed98086b57
+status: 2
+status_message: null

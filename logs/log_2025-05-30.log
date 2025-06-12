@@ -1,0 +1,41 @@
+2025-05-30 15:49:28,769 - INFO - data_ingestion.py:16 - Data Ingestion has started
+2025-05-30 15:49:28,770 - INFO - data_ingestion.py:22 - Directory for Ingestion created
+2025-05-30 15:49:29,230 - INFO - data_ingestion.py:30 - Raw data loaded succesfully
+2025-05-30 15:49:29,294 - INFO - data_ingestion.py:33 - Data splitted Sucessfully
+2025-05-30 15:49:31,067 - INFO - data_ingestion.py:37 - Training and testing data saved sucesfully
+2025-05-30 15:55:33,257 - INFO - data_ingestion.py:16 - Data Ingestion has started
+2025-05-30 15:55:33,259 - INFO - data_ingestion.py:22 - Directory for Ingestion created
+2025-05-30 15:55:33,453 - INFO - data_ingestion.py:30 - Raw data loaded succesfully with shape: (103594, 25)
+2025-05-30 15:55:33,483 - INFO - data_ingestion.py:33 - Data splitted Sucessfully
+2025-05-30 15:55:33,962 - INFO - data_ingestion.py:37 - Training and testing data saved sucesfully with shape        MyUnknownColumn      id  ... Arrival Delay in Minutes             satisfaction
+18060            18104    3070  ...                      2.0                satisfied
+66327            66524   19682  ...                      0.0                satisfied
+62887            63076   36972  ...                    119.0                satisfied
+26251            26315  103911  ...                     10.0                satisfied
+65452            65647    2163  ...                      8.0                satisfied
+...                ...     ...  ...                      ...                      ...
+6265              6281   95562  ...                      0.0  neutral or dissatisfied
+54886            55054  107717  ...                      0.0  neutral or dissatisfied
+76820            77048  110076  ...                     25.0  neutral or dissatisfied
+860                861   45223  ...                     13.0                satisfied
+15795            15832   46406  ...                      0.0                satisfied
+
+[82875 rows x 25 columns],        MyUnknownColumn      id  ... Arrival Delay in Minutes             satisfaction
+18550            18595   49163  ...                      0.0                satisfied
+19287            19336  110026  ...                      0.0  neutral or dissatisfied
+72281            72501    1215  ...                      0.0  neutral or dissatisfied
+84957            85210   96985  ...                     79.0  neutral or dissatisfied
+87557            87824   22269  ...                      0.0                satisfied
+...                ...     ...  ...                      ...                      ...
+13466            13497    6860  ...                     27.0  neutral or dissatisfied
+59404            59583  105956  ...                     12.0                satisfied
+84713            84966   58904  ...                      0.0                satisfied
+43975            44109   57956  ...                      0.0  neutral or dissatisfied
+43721            43853   44182  ...                      0.0                satisfied
+
+[20719 rows x 25 columns]
+2025-05-30 15:56:52,845 - INFO - data_ingestion.py:16 - Data Ingestion has started
+2025-05-30 15:56:52,845 - INFO - data_ingestion.py:22 - Directory for Ingestion created
+2025-05-30 15:56:53,046 - INFO - data_ingestion.py:30 - Raw data loaded succesfully with shape: (103594, 25)
+2025-05-30 15:56:53,067 - INFO - data_ingestion.py:33 - Data splitted Sucessfully
+2025-05-30 15:56:53,601 - INFO - data_ingestion.py:37 - Training and testing data saved sucesfully with shape (82875, 25), (20719, 25)
