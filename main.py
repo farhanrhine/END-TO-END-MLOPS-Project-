@@ -1,3 +1,4 @@
+# used this instead of dvc when working with jenkins and github
 from src.data_ingestion import DataIngestion
 from src.data_processing import DataProcessor
 from src.feature_engineering import FeatureEngineer
