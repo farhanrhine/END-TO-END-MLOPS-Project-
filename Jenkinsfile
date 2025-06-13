@@ -103,7 +103,7 @@ pipeline {
                 script {
                     // AWS Deployment
                     echo 'AWS Deployment........'
-                    sh "aws ecs update-service --cluster clustername --service servicename --force-new-deployment"
+                    sh "aws ecs update-service --cluster frhn-aws --service frhn_ecs_service --force-new-deployment"
                 }
             }
         }
