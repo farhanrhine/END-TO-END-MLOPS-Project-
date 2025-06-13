@@ -98,5 +98,15 @@ pipeline {
             }
         }
 
+        stage('AWS Deployment') {
+            steps {
+                script {
+                    // AWS Deployment
+                    echo 'AWS Deployment........'
+                    sh "aws ecs update-service --cluster clustername --service servicename --force-new-deployment"
+                }
+            }
+        }
+
     }
 }
