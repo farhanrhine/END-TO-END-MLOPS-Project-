@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    options {
+        preserveStashes() // <--- This is what enables "Restart from Stage"
+    }
+
+
     environment {
         VENV_DIR = 'venv'
         DOCKERHUB_CREDENTIAL_ID = 'mlops-dockerhub'
