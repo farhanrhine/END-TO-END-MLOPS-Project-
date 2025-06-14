@@ -103,8 +103,8 @@ pipeline {
             steps {
                 script {
                     echo 'AWS Deployment........'
-                    withAWS(credentials: 'aws-cred', region: 'us-east-1') {
-                        sh 'aws ecs update-service --cluster frhn-aws --service frhn_ecs_service --force-new-deployment --region us-east-1'
+                    withAWS(credentials: 'aws-id', region: 'us-east-1') {
+                        sh 'aws ecs update-service --cluster frhn_ecs --service sarah_ecs_service --force-new-deployment --region us-east-1'
                     }
                 }
             }
